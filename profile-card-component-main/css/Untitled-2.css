@@ -1,0 +1,192 @@
+body {
+  background-color: aliceblue;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: rgb(227, 227, 255);
+  font-family: "Kanit", sans-serif;
+}
+/*Menu de navegacion respponsive disain*/
+
+header {
+  background-color: rgb(19, 62, 141);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+}
+.logo {
+  height: 300px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+img {
+  height: 70px;
+  width: 70px;
+  padding-left: 10px;
+}
+.logo a {
+  text-decoration: none;
+  padding-left: 15px;
+  color: #fff;
+}
+nav a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+nav a:hover {
+  border-bottom: 1px solid rgb(6, 6, 248);
+  transition: 1s;
+}
+/*todo: primero se diseño la parte de la targeta del desarrodador web que solo aparecera cuando este en destok
+esta codigo es el de abajo osea la card conla img de fredi bega */
+.contenedor {
+  background-color: rgb(18, 18, 255);
+
+  width: 400px;
+  height: 280px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.contenedor_card {
+  background-color: rgba(255, 255, 255, 0.924);
+  height: 35%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contenedor img {
+  height: 120px;
+  width: 120px;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  margin-top: 40%;
+  border-top: 2px solid black;
+}
+.redes a {
+  color: red;
+}
+
+/* se diseño la targeta que se va a mostrar sola en modo destok entoces lo primero se hiso de segundas*/
+.mega {
+  background-color: rgb(18, 18, 255);
+
+  width: 400px;
+  height: 470px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.913);
+  border-radius: 5px;
+}
+.mega img {
+  width: 300px;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.mega_link {
+  display: flex;
+  justify-content: space-around;
+}
+.mega samp {
+  color: rgb(171, 14, 171);
+}
+.mega samp:hover {
+  color: rgb(179, 5, 124);
+}
+.mega_subs {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 30px;
+}
+
+.foter {
+  background-color: rgb(19, 62, 141);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  border-top: 30px;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  height: auto;
+  width: 100vw;
+  position: absolute;
+  bottom: -15px;
+  height: 40px;
+  width: 100%;
+}
+
+.foter a {
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+}
+
+.foter a:hover {
+  border-bottom: 2px solid #fff;
+  transition: 1s;
+  border-bottom: 1px solid rgb(4, 4, 121);
+}
+
+@media (min-width: 800px) {
+  body {
+  }
+  .contenedor {
+    opacity: 0;
+  }
+  .mega {
+    background-color: rgb(18, 18, 255);
+    width: 90%;
+    display: flex;
+    margin-top: 5%;
+  }
+  .mega img {
+    width: 50%;
+    height: 100%;
+    order: 1;
+    margin: 0;
+  }
+  .mega_text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mega h3 {
+    margin-top: 80px;
+    margin-left: 50px;
+  }
+  .mega p {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+  }
+  .mega_link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-left: 20px;
+  }
+  header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
